@@ -6,15 +6,15 @@ class Mirrorproxy < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/inbjo/MirrorProxy/releases/download/v1.7.2/mirrorproxy-client-aarch64-apple-darwin.tar.gz"
-      sha256 "2942bcccd558360f417d613df423ef848f5d733aa10d17baa005d0c75f53db63"
+      sha256 "dea1f046c05c555dfe72bdeaa65a056f37c53b7bab68b297c060ab370c77da86"
     else
       url "https://github.com/inbjo/MirrorProxy/releases/download/v1.7.2/mirrorproxy-client-x86_64-apple-darwin.tar.gz"
-      sha256 "fb9464f3229512430e234f102573d37b2ec9c1d0a321655632d728cea3a1b03f"
+      sha256 "231c81187f339138caa5292b7b54670ec8b3f0603bfe3710efddd05e5346ed60"
     end
   end
   on_linux do
     url "https://github.com/inbjo/MirrorProxy/releases/download/v1.7.2/mirrorproxy-client-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "58f817b3f9b71a26d9a7595821dc0eb76ee24e342688fbb0c66b3d8b1840e88d"
+    sha256 "c997bde7aa8c9b9bcac9c730985bbffe6dc6e8f92ad7cae5a54a183ded3edd26"
   end
   def install
     bin.install "mirrorproxy"
