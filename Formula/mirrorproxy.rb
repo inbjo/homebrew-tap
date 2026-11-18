@@ -1,20 +1,20 @@
 class Mirrorproxy < Formula
   desc "Standalone source manager for MirrorProxy"
   homepage "https://github.com/inbjo/MirrorProxy"
-  version "1.7.3"
+  version "1.8.0"
   license "MIT"
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/inbjo/MirrorProxy/releases/download/v1.7.3/mirrorproxy-client-aarch64-apple-darwin.tar.gz"
-      sha256 "7dbae81732c5ca99c95ab84c79362bc9b82927fd394654fb39f2cc77cf0b47f7"
+      url "https://github.com/inbjo/MirrorProxy/releases/download/v1.8.0/mirrorproxy-client-aarch64-apple-darwin.tar.gz"
+      sha256 "8d8074a1c3d6990c79b1248c82c890d43a9a5ac6141d33d154e4bc750ff649f6"
     else
-      url "https://github.com/inbjo/MirrorProxy/releases/download/v1.7.3/mirrorproxy-client-x86_64-apple-darwin.tar.gz"
-      sha256 "a0695b46edb903e23d4f57fa72f97099c1e05acbba1e4733a48b87d99601843f"
+      url "https://github.com/inbjo/MirrorProxy/releases/download/v1.8.0/mirrorproxy-client-x86_64-apple-darwin.tar.gz"
+      sha256 "06ed0317ae3f4c6dd982a83a736fae37a03462c799941d82a7109f5cf7af489f"
     end
   end
   on_linux do
-    url "https://github.com/inbjo/MirrorProxy/releases/download/v1.7.3/mirrorproxy-client-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "b3857b8266eaf78a6316529f7070b58c2fbb0802faf4029e34c37737d9b829fc"
+    url "https://github.com/inbjo/MirrorProxy/releases/download/v1.8.0/mirrorproxy-client-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "ebc788b6f74040002204e46cfd2aa563e6a07daab06ab2ef66efe1e163ba5eb0"
   end
   def install
     bin.install "mirrorproxy"
